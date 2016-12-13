@@ -14,6 +14,9 @@ public class Test {
 		 String type=sc.next();
 		 
 		 System.out.println("should pay:");
+		 
+		 //使用策略模式的类只需要与 CashContext交互就可以了，不需要了解具体细节，
+		 //这样使用者与被使用者达到了耦合的效果
 		 double total=new CashContext(type).getResult(amount*price);
 		 System.out.println(total);
 	}
