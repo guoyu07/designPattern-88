@@ -3,8 +3,11 @@ package 命令模式.烧烤店;
 import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Waiter {
 	//增加存放具体命令的容器
@@ -23,10 +26,9 @@ public class Waiter {
 	//取消订单
 	public void cancelOrder(Command command){
 		orders.remove(command);
-		//时间代码例子：http://www.cnblogs.com/minisculestep/archive/2015/10/25/4908368.html
-		Date date=new Date(0);
-		 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		System.out.println("取消订单："+command.toString()+"取消时间："+sdf.format(date));
+		//时间代码例子：http://blog.csdn.net/chenleixing/article/details/44408875
+		
+		System.out.println("取消订单："+command.toString()+"取消时间："+LocalDateTime.now());
 	}
 	
 	//通知全部执行

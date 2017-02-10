@@ -21,6 +21,8 @@ public class Test {
 		//点菜完毕，通知厨房
 		girl.notice();
 		
+		girl.cancelOrder(mutton);
+		
 	}
 
 }
