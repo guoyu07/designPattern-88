@@ -14,9 +14,9 @@ public class ConcreteMediator extends Mediator{
 	public void send(String message, Colleague colleague) {
 		// TODO Auto-generated method stub
 		if(colleague==colleague1)
-			colleague2.notify();
+			colleague2.notice(message);
 		else
-			colleague1.notify();
+			colleague1.notice(message);
 	}
 
 }

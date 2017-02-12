@@ -11,7 +11,7 @@ public class ConcreteColleague1 extends Colleague{
 		mediator.send(message, this);
 	}
 	
-	public void notify(String message){
+	public void notice(String message){
 		System.out.println("同事1得到消息："+message);
 	}
 
