@@ -17,6 +17,7 @@ public class Test {
 		//具体同事类对象相互发消息
 		colleague1.send("how old are you？");
 		colleague2.send("怎么老是你？");
+		
 	}
 
 }
